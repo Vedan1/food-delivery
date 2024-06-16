@@ -1,0 +1,87 @@
+.food-item{
+    
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    font-family: "outfit";
+
+}
+
+.food-item-image{
+   width: 100%;         /*To add image only within the box area*/
+   
+    border-radius: 15px 15px 0px 0px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-size: 20px;
+    font-weight:400 ;
+
+}
+.food-item-description{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.food-item-price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: tomato
+}
+
+
+.food-item-info{
+    padding: 15px;
+}
+
+/* .food-item  :hover{
+
+    background-color: tomato;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    
+} */
+
+
+
+.food-item-image-container{
+    position: relative;
+}
+
+.food-item-image-container .add{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+}
+.food-item-image-container .add:hover{
+    /* border: 2px solid tomato; */
+    width: 40px;
+    transition: 0.2s;
+     
+}
+
+.food-item-image-container .food-item-count{
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    right: 15px;
+    align-items: center;
+    padding: 6px;
+    gap : 10px;
+    background-color: white;
+    border-radius: 50px;
+}
