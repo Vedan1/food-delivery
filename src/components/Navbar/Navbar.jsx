@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const Navbar = ({SetShowLogin }) => {
     const[menu, setMenu] = useState("home");    //setUnderline 
 
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="dot" />     {/*This part Pending*/}
                 <img src={assets.basket_icon} className='navbar-basket-icon' />
             </div>
-            <button className='navbar-sign-in'>Sign In</button>
+            <button className='navbar-sign-in' onClick={()=>{SetShowLogin(true)}}>Sign In</button>
 
         </div>
 
