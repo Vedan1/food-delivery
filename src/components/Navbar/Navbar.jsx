@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom';
+import Cart from '../../pages/Cart/Cart';
 const Navbar = ({SetShowLogin }) => {
     const[menu, setMenu] = useState("home");    //setUnderline 
 
@@ -9,7 +10,7 @@ const Navbar = ({SetShowLogin }) => {
     <div>
         <div className="navbar">
             
-            <img src={assets.logo} className='navbar-logo' />
+           <Link to="/"> <img src={assets.logo} className='navbar-logo' /></Link>
             <ul className='navbar-menu'>
  
             {/*   set Classname as active or nothing as the one which is active gets underline 
@@ -22,7 +23,7 @@ const Navbar = ({SetShowLogin }) => {
             <div className="navbar-right">
                 <img src={assets.search_icon} className='navbar-search-icon' />
                 <div className="dot" />     {/*This part Pending*/}
-                <img src={assets.basket_icon} className='navbar-basket-icon' />
+            <Link to='/cart'> <img src={assets.basket_icon} className='navbar-basket-icon' /> </Link>
             </div>
             <button className='navbar-sign-in' onClick={()=>{SetShowLogin(true)}}>Sign In</button>
 

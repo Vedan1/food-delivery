@@ -1,0 +1,26 @@
+.cart{
+    margin-top: 100px;
+}
+
+.cart-item-title{
+    display: grid;
+    grid-template-columns: 1.5fr .5fr .5fr .5fr .5fr .5fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    row-gap: 50px;
+
+}
+.cart-item-item{
+    margin: 10px 0px;
+    color: black;
+}
+.cart-item-item img{
+    width : 250px;
+    border-radius: 5px;
+}
+.cart hr{
+    height: 1px;
+    color: #e4e4e440;
+    /* border: none; */
+}
